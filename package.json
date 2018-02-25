@@ -1,0 +1,25 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "SET NODE_ENV=development & nodemon index.js",
+    "test": "SET NODE_ENV=testing & nodemon --exec mocha --recursive -R min",
+    "prod": "SET NODE_ENV=production & nodemon index.js"
+  },
+  "author": "Mayank Singh Fartiyal",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.1.1",
+    "mongoose": "^5.0.6",
+    "passport": "^0.4.0",
+    "passport-jwt": "^3.0.1"
+  },
+  "devDependencies": {
+    "mocha": "^5.0.1",
+    "supertest": "^3.0.0"
+  }
+}
